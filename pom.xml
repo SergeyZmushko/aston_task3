@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>aston_task3 Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <build>
+    <finalName>aston_task3</finalName>
+
+
+  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,17 +20,26 @@
       <scope>test</scope>
     </dependency>
 
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
-
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.13.0</version>
+    </dependency>
   </dependencies>
-  <build>
-    <finalName>aston_task3</finalName>
-  </build>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.target.source>17</maven.target.source>
+  </properties>
 
 </project>
+
+
+
 
